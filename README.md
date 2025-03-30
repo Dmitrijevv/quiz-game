@@ -1,42 +1,41 @@
 # Quiz Game
 
-## Опис проєкту
+## Project Description
 
-Quiz Game — це веб-застосунок для гри в вікторину, який отримує запитання з Open Trivia Database API. Користувач вибирає категорію, рівень складності та тип запитань та відповідає на них.
+Quiz Game is a web application that allows users to play a trivia quiz. The questions are fetched from the \*\*Open Trivia Database API\*\*. Users can choose the category, difficulty level, and type of questions to answer.
 
-## Використані технології
-- **Next.js** — фреймворк для React
-- **TypeScript** — статична типізація
-- **Tailwind CSS** — для стилізації
-- **Lodash (debounce)** — для оптимізації запитів
-- **Open Trivia Database API** — для отримання запитань
+## Technologies Used
 
-## Встановлення та запуск
+- **Next.js** —— A React framework for server-side rendering and static site generation.
+- **TypeScript** — Static type checking for safer and more robust code.
+- **Tailwind CSS** — For styling and creating responsive designs.
+- **Lodash (debounce)** — For optimizing API requests and improving performance.
+- **Open Trivia Database API** — To fetch trivia questions from a free online database.
 
-### 1. Копіювання репозиторію
+## Installation and Setup
+
+### 1. Clone the repository
+
 ```sh
 git clone https://github.com/your-username/quiz-game.git
 cd quiz-game
 ```
 
-### 2. Встановлення залежностей
+### 2. Install dependencies
+
 ```sh
 npm install
 # або
 yarn install
 ```
 
-### 3. Запуск сервера
+### 3. Run the server
+
 ```sh
 npm run dev
 # або
 yarn dev
 ```
 
-Після цього відкрий [http://localhost:3000](http://localhost:3000) у браузері.
-
-## Плановані функції
-- **Підтримка тимчасових рейтингів**
-- **Авторизація та збереження результатів**
-- **Різні режими гри (одиночний, мультиплеєр)**
+After that, open your browser and go to [http://localhost:3000](http://localhost:3000) .
 
