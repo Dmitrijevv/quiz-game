@@ -3,6 +3,7 @@ import { useRouter } from 'next/navigation';
 import { Card, CardContent, CardDescription, CardHeader } from '@/components/ui/card';
 import React, { useState, useEffect, useCallback } from 'react';
 import debounce from 'lodash/debounce';
+import Loader from '@/components/loader/Loader';
 
 interface IGame {
   amount?: string;
@@ -133,7 +134,7 @@ const Game = ({ data }: IGameType) => {
           ))}
         </ul>
       ) : (
-        <p>No questions loaded</p>
+        <Loader/>
       )}
 
       {questions.length > 0 && (

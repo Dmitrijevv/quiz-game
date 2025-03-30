@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import { LogOut } from 'lucide-react'
 import { useRouter } from 'next/navigation'
+import Loader from './loader/Loader'
 
 const Logout = () => {
   const { push } = useRouter()
@@ -33,7 +34,7 @@ const Logout = () => {
   }, [isLoggedOut])
 
   if (!isBrowser) {
-    return <div>Loading...</div> // Показуємо лоадер до тих пір, поки не підтвердимо, що вікно доступне
+    return <Loader/> // Показуємо лоадер до тих пір, поки не підтвердимо, що вікно доступне
   }
 
   return (
