@@ -71,7 +71,7 @@ const Setting = () => {
       <br />
       <label>Category:</label>
       <br />
-      <select className='mb-5 w-full border-2 border-cyan-400 p-3 rounded-xl' {...register('category')}>
+      <select className='mb-5 w-full border-2 border-cyan-400 p-3 rounded-xl' {...register('category')} required>
         <option value="any">Any Category</option>
         {categories.map((cat) => (
           <option key={cat.id} value={cat.id}>
@@ -82,7 +82,7 @@ const Setting = () => {
       <br />
       <label>Level difficulty:</label>
       <br />
-      <select className='mb-5 w-full border-2 border-cyan-400 p-3 rounded-xl' {...register('difficulty')}>
+      <select className='mb-5 w-full border-2 border-cyan-400 p-3 rounded-xl' {...register('difficulty')} required>
         <option value="any">Any</option>
         <option value="easy">Easy</option>
         <option value="medium">Medium</option>
@@ -91,7 +91,7 @@ const Setting = () => {
       <br />
       <label>Select type:</label>
       <br />
-      <select className='mb-5 w-full border-2 border-cyan-400 p-3 rounded-xl' {...register('type')}>
+      <select className='mb-5 w-full border-2 border-cyan-400 p-3 rounded-xl' {...register('type')} required>
         <option value="any">Any</option>
         <option value="multiple">Multiple Choice</option>
         <option value="boolean">True / False</option>
